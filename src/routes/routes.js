@@ -15,6 +15,6 @@ routes.get("/", async (req, res) => {
  * Route that will help in downloading or that will be calling the api to download
  * the reel video.
  */
-routes.get("/download-reels-stories-video", require("./controllers/download"));
+routes.post("/download-reels-stories-video", require("./controllers/download"));
 
 module.exports = routes;
